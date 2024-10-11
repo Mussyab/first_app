@@ -166,7 +166,6 @@ class HomeScreen extends StatelessWidget {
                     itemBuilder: (context, index) {
                       // Accessing the data at index
                       var product = productController.products[index];
-// das
                       return Container(
                         height: 180,
                         width: 150,
