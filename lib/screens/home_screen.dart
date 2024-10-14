@@ -3,7 +3,6 @@ import 'package:first_app/controllers/product_controller.dart';
 import 'package:first_app/screens/product_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 class HomeScreen extends StatelessWidget {
   ProductController productController = Get.put(ProductController());
