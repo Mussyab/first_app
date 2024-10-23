@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:first_app/screens/home_screen.dart';
 import 'package:first_app/screens/login_screen.dart';
+import 'package:first_app/screens/navigation_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -35,7 +36,7 @@ class Authcontroller extends GetxController {
       emailAddress.clear();
       password.clear();
       loader.value = false;
-      Get.offAll(() => HomeScreen());
+      Get.offAll(() => NavigationScreen());
     } on FirebaseAuthException catch (e) {
       loader.value = false;
 
